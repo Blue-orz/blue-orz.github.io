@@ -1,29 +1,29 @@
 # Yuwei Chen — Personal Homepage
 
-Public website: **https://blue-orz.github.io/**
+Website: **https://blue-orz.github.io/**
 
-A responsive, bilingual academic homepage with no personal photographs.
-Built with HTML, CSS, and JavaScript. No build step, analytics, third-party fonts,
-or external runtime dependencies.
+A compact, text-only academic homepage: name, a short introduction, interests,
+and contact links. The layout takes inspiration from the introductory section
+of [Jon Barron's homepage](https://jonbarron.info/), with original HTML and CSS.
+It includes no personal photograph, research/publication sections, or empty placeholders.
 
-## Edit the website
+## Editing
 
-- `index.html`: English content, contact details, and page structure.
-- `style.css`: layout, typography, colors, and mobile/print styles.
-- `script.js`: Chinese translations, language switch, and email copy button.
+- `index.html`: English introduction, contact information, and metadata.
+- `style.css`: plain white layout, typography, links, and mobile styles.
+- `script.js`: Chinese translation and optional language switch.
 - `favicon.svg`: typographic browser icon.
 
-When updating contact details, update both `index.html` and `script.js`.
+All core content and links are available without JavaScript. No build tools,
+third-party fonts, tracking, or external runtime dependencies are required.
 
-## Preview locally
+## Local preview
 
 ```sh
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Visit http://127.0.0.1:4173.
+Open http://127.0.0.1:4173/.
 
-## Deployment
-
-GitHub Pages publishes the repository root from the `main` branch.
-The `.nojekyll` file keeps the site as plain static files.
+GitHub Pages publishes the repository root from `main`. The `.nojekyll` file
+keeps the site as plain static files.
